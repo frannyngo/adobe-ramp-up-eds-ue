@@ -1,4 +1,12 @@
 .columns {
-    width: 50%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     background-color: pink;
+}
+
+.inner {
+    background-color: green;
+    width: 100%;
 }
