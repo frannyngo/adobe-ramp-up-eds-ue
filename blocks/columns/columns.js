@@ -5,7 +5,7 @@ export default function decorate(block) {
   const inner = block.firstElementChild;
   inner.className = "inner";
 
-  [...inner].forEach((child) => {
+  [...inner.children].forEach((child) => {
     console.log("*** child ", child);
   });
 }
