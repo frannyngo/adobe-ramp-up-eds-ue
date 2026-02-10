@@ -1,10 +1,10 @@
 export default function decorate(block) {
   console.log("*** columns ", block);
 
-  const inner = block.children;
+  const inner = block.children.child;
   inner.className = "columns";
 
-  [...block.children].forEach((child) => {
+  [...inner].forEach((child) => {
     console.log("*** child ", child);
   });
 }
