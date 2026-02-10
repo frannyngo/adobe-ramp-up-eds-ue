@@ -180,12 +180,21 @@
     ]
   },
   {
-    "id": "contact us",
+    "id": "contact",
     "fields": [
       {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
+        "component": "text",
+        "valueType": "number",
+        "name": "contact",
+        "value": "",
+        "label": "contact"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
       }
     ]
   },

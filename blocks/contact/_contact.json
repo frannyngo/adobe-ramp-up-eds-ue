@@ -1,0 +1,57 @@
+{
+    "definitions": [
+        {
+            "title": "contact",
+            "id": "contact",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/contact/v1/contact",
+                        "template": {
+                            "contact": "2",
+                            "rows": "1"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "contact",
+            "fields": [
+                {
+                    "component": "text",
+                    "valueType": "number",
+                    "name": "contact",
+                    "value": "",
+                    "label": "contact"
+                },
+                {
+                    "component": "text",
+                    "valueType": "number",
+                    "name": "rows",
+                    "value": "",
+                    "label": "Rows"
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "contact",
+            "components": [
+                "contact"
+            ]
+        },
+        {
+            "id": "contact",
+            "components": [
+                "text",
+                "image",
+                "button",
+                "title"
+            ]
+        }
+    ]
+}
