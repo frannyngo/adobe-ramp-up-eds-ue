@@ -17,18 +17,21 @@ export default function decorate(block) {
 
     [...grandChild].forEach((g, i) => {
       if (i === 0) return; // title
-      console.log("*** g ", g);
 
       const placeholder = g.querySelector("p em");
-      console.log("*** placeholder ", placeholder);
-      console.log("*** placeholder val ", placeholder.textContent);
 
-      const input = document.createElement("input");
-      input.placeholder = placeholder;
-      input.required = true;
-      input.type = "text";
-      input.id = placeholder;
-      input.name = placeholder;
+      if (placeholder) {
+        console.log("*** placeholder ", placeholder);
+        console.log("*** placeholder val ", placeholder.textContent);
+
+        const input = document.createElement("input");
+        input.placeholder = placeholder;
+        input.required = true;
+        input.type = "text";
+        input.id = placeholder;
+        input.name = placeholder;
+        grandChild[i].append(input);
+      }
       // const textArea = document.createElement('textarea')
     });
 
