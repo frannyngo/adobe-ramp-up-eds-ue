@@ -180,6 +180,16 @@
     ]
   },
   {
+    "id": "contact us",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
